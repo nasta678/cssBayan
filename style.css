@@ -3,6 +3,7 @@ body {
     justify-content: center;
     margin: 0;
     background-color: rgb(220, 245, 234);
+    font-size: 1.2em;
 }
 
 
@@ -17,18 +18,39 @@ body {
 }
 
 .bayan-row {
-    border-top: solid 1px black;
+    border-top: solid 0.1rem black;
     cursor: pointer;
 }
 
 .bayan-row-name {
-    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+.bayan-row-name:active {
+    opacity: 0.6;
+}
+
+.bayan-row-name-header {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(33, 136, 20);
 }
 
 .bayan-row-name-input {
-    appearance: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
 }
 
-.bayan-row-name-input:hover {
-    appearance: auto;
+.meme {
+    height: 0;
+    width: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#row1:checked~.bayan-row-name>.meme {
+    width: 30%;
+    height: auto;
+    transition: width 0.5s ease-in-out;
 }
