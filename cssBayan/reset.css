@@ -1,0 +1,77 @@
+/* Links */
+
+a,
+a:visited {
+
+	text-decoration: none;
+}
+
+a:hover {
+
+	text-decoration: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+/* Common */
+
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+	display: block;
+}
+
+
+
+p+p {
+	margin-top: 1em;
+}
+
+ul {
+	list-style: none;
+}
+
+img,
+svg {
+	vertical-align: top;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+	outline: none;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
