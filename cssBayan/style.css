@@ -19,16 +19,16 @@ body {
 
 .bayan-row {
     border-top: solid 0.1rem black;
+}
+
+.bayan-row-name:hover {
     cursor: pointer;
 }
 
 .bayan-row-name {
     display: flex;
     flex-direction: column;
-}
-
-.bayan-row-name:active {
-    opacity: 0.6;
+    align-items: center;
 }
 
 .bayan-row-name-header {
@@ -43,14 +43,8 @@ body {
     opacity: 0;
 }
 
-.meme {
-    height: 0;
-    width: 0;
-    transition: all 0.5s ease-in-out;
+.bayan-row-name-input:checked~.bayan-row-name>.bayan-row-name-header {
+    color: beige
 }
 
-#row1:checked~.bayan-row-name>.meme {
-    width: 30%;
-    height: auto;
-    transition: width 0.5s ease-in-out;
-}
+/*меняется цвет текста при checked*/
